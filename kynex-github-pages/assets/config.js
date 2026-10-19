@@ -1,19 +1,9 @@
 window.KYNEX_CONFIG = {
-  // Telegram handle without @.
   telegramHandle: "theegreatdavid",
 
-  // Automatically advance the home-page carousel every 8 seconds.
   carouselDelay: 8000,
 
-  /*
-   * Generates entries for all 67 uploaded screenshots.
-   *
-   * Photos 1–37 end with: 16-46-06.jpg
-   * Photos 38–67 end with: 16-46-07.jpg
-   *
-   * The home-page carousel uses the first 20 entries.
-   * The results-page gallery uses all 67 entries.
-   */
+  // All 67 screenshots, using their existing filenames.
   testimonials: Array.from({ length: 67 }, function (_, index) {
     var photoNumber = index + 1;
 
@@ -34,7 +24,6 @@ window.KYNEX_CONFIG = {
     };
   }),
 
-  // Public account reports.
   reports: [
     {
       name: "KyneX Scalper",
@@ -47,14 +36,6 @@ window.KYNEX_CONFIG = {
     {
       name: "KyneX Scalper — connected account 3",
       url: "https://showmytrades.com/account/kynex-scalper-3"
-    },
-    {
-      name: "KyneX Scalper — connected account 4",
-      url: "https://showmytrades.com/account/kynex-scalper-4"
-    },
-    {
-      name: "KyneX Scalper — connected account 5",
-      url: "https://showmytrades.com/account/kynex-scalper-5"
     },
     {
       name: "KyneX AI Engine — existing report",
