@@ -218,15 +218,25 @@
 
           <!-- SHOWMYTRADES HOME WIDGET -->
           <div class="widget-slot" id="home-account-widget">
-            <iframe
-              id="smt-stats-qxel0zdiq"
-              title="KyneX Scalper connected-account performance on ShowMyTrades"
-              src="https://showmytrades.com/widget/kynex-scalper?type=complete&amp;theme=auto"
-              width="1500"
-              height="796"
-              loading="lazy"
-              style="display: block; width: 100%; max-width: 100%; border: 0; border-radius: 8px;"
-            ></iframe>
+            <iframe 
+  id="smt-stats-ojutz1g8z" 
+  src="https://showmytrades.com/widget/kynex-scalper-4?type=equity&theme=auto" 
+  width="1000" 
+  height="537" 
+  loading="lazy" 
+  frameborder="0" 
+  style="border-radius: 8px; width: 1000px;">
+</iframe>
+<script>
+(function() {
+  var iframe = document.getElementById('smt-stats-ojutz1g8z');
+  window.addEventListener('message', function(e) {
+    if (e.data?.type === 'widget-resize' && e.source === iframe.contentWindow) {
+      iframe.height = e.data.height;
+    }
+  });
+})();
+</script>
           </div>
 
           <div class="widget-bottom">
