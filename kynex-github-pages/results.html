@@ -1,8 +1,489 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#101411"><title>Results & Experiences | KyneX Scalper</title><meta name="description" content="Explore KyneX Scalper connected-account reports and client experiences before applying for a free trial."><link rel="stylesheet" href="assets/styles.css"></head><body><a class="skip" href="#main">Skip to content</a>
-<header class="header"><div class="wrap nav"><a class="brand" href="index.html" aria-label="KyneX Scalper home"><span class="mark" aria-hidden="true">K</span><span class="brand-name">KyneX Scalper<small>ProfitSplash Autotrades</small></span></a><nav class="navlinks" aria-label="Main navigation"><a class="nav-home" href="index.html">Overview</a><a href="results.html" aria-current="page">Results</a><a class="btn small" data-contact="trial" href="https://t.me/theegreatdavid">Apply for Free Trial</a></nav></div></header><main id="main"><div class="wrap"><section class="results-intro"><p class="eyebrow">Performance &amp; experiences</p><h1>Take your time.<br><em>Explore the record.</em></h1><p class="lead">Review the connected-account reports and client experiences below. Look at the full reporting period, including drawdowns and trading history.</p><p class="muted">These are connected accounts using the KyneX approach—not separate, independent strategies. Their outcomes can differ. The full reports are the source for account-specific figures and dates.</p></section><section class="section" aria-label="Connected-account reports"><div class="reports"><article class="widget-frame report"><h3 data-report-name="0"></h3><!-- SHOWMYTRADES REPORT 1: Paste the official embed inside this div. --><div class="widget-slot" id="report-widget-1"></div><div class="widget-bottom"><span>Public account report</span><a class="textlink" data-report-link="0" href="https://showmytrades.com/account/kynex-scalper" target="_blank" rel="noopener noreferrer">Open full report ↗</a></div></article><article class="widget-frame report"><h3 data-report-name="1"></h3><!-- SHOWMYTRADES REPORT 2: Paste the official embed inside this div. --><div class="widget-slot" id="report-widget-2"></div><div class="widget-bottom"><span>Public account report</span><a class="textlink" data-report-link="1" href="https://showmytrades.com/account/kynex-scalper" target="_blank" rel="noopener noreferrer">Open full report ↗</a></div></article><article class="widget-frame report"><h3 data-report-name="2"></h3><!-- SHOWMYTRADES REPORT 3: Paste the official embed inside this div. --><div class="widget-slot" id="report-widget-3"></div><div class="widget-bottom"><span>Public account report</span><a class="textlink" data-report-link="2" href="https://showmytrades.com/account/kynex-scalper" target="_blank" rel="noopener noreferrer">Open full report ↗</a></div></article><article class="widget-frame report"><h3 data-report-name="3"></h3><!-- SHOWMYTRADES REPORT 4: Paste the official embed inside this div. --><div class="widget-slot" id="report-widget-4"></div><div class="widget-bottom"><span>Public account report</span><a class="textlink" data-report-link="3" href="https://showmytrades.com/account/kynex-scalper" target="_blank" rel="noopener noreferrer">Open full report ↗</a></div></article></div><p class="fine">External reports open on ShowMyTrades. A report may retain an earlier account title while its owner updates the naming.</p></section></div><section class="section alt" id="client-experiences"><div class="wrap"><div class="section-head"><div><p class="eyebrow">Client experiences</p><h2>Messages worth reading in context.</h2></div><p class="muted">Individual experiences vary. Selected messages do not establish typical results or guarantee future performance.</p></div><div class="gallery" id="testimonial-gallery"></div><div class="empty-state" id="gallery-empty"><p>Approved client screenshots will be added here.</p><p>The public account reports above are available to explore now.</p></div><div class="gallery-footer"><button class="btn outline" id="load-more" hidden>Load more experiences</button></div></div></section></main><section class="risk"><div class="wrap"><h2>Before you begin</h2><p>Trading XAUUSD involves risk, including loss of capital. Historical results and any results observed during the trial do not guarantee future performance. Connected-account outcomes can differ. A demo account is available for evaluating the setup without risking live funds.</p></div></section>
-<section class="closing"><div class="wrap"><p class="eyebrow">Your next step</p><h2>Take a closer look.</h2><p>Review the records. Understand the approach.<br>If it fits what you’re looking for, apply for the trial.</p><a class="btn" data-contact="trial" href="https://t.me/theegreatdavid">Apply for Free Trial <span aria-hidden="true">↗</span></a></div></section>
-<footer><div class="wrap"><span>© <span data-year></span> ProfitSplash Autotrades · KyneX Scalper</span><span><a href="index.html">Overview</a> &nbsp; / &nbsp; <a href="results.html">Results &amp; experiences</a></span></div></footer>
-<a class="btn floating" data-contact="trial" href="https://t.me/theegreatdavid">Apply for Free Trial <span aria-hidden="true">↗</span></a>
-<dialog class="dialog" id="image-dialog" aria-labelledby="image-title"><div class="dialog-head"><p id="image-title">Client experience</p><button class="iconbtn" id="dialog-close" aria-label="Close enlarged screenshot">Close ×</button></div><img id="dialog-image" alt=""></dialog>
-<script src="assets/config.js"></script><script src="assets/main.js"></script></body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101411">
+
+  <title>Results &amp; Experiences | KyneX Scalper</title>
+
+  <meta
+    name="description"
+    content="Explore KyneX Scalper connected-account reports and client experiences before applying for a free trial."
+  >
+
+  <link rel="stylesheet" href="assets/styles.css">
+
+  <!-- Page-specific layout for the account widgets -->
+  <style>
+    .reports {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 28px;
+    }
+
+    .reports .report,
+    .reports .widget-slot {
+      min-width: 0;
+    }
+
+    .reports .widget-slot {
+      margin-bottom: 20px;
+    }
+
+    .reports .widget-slot iframe {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      border: 0;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="wrap nav">
+      <a
+        class="brand"
+        href="index.html"
+        aria-label="KyneX Scalper home"
+      >
+        <span class="mark" aria-hidden="true">K</span>
+
+        <span class="brand-name">
+          KyneX Scalper
+          <small>ProfitSplash Autotrades</small>
+        </span>
+      </a>
+
+      <nav class="navlinks" aria-label="Main navigation">
+        <a class="nav-home" href="index.html">
+          Overview
+        </a>
+
+        <a href="results.html" aria-current="page">
+          Results
+        </a>
+
+        <a
+          class="btn small"
+          data-contact="trial"
+          href="https://t.me/theegreatdavid"
+        >
+          Apply for Free Trial
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+
+      <!-- INTRODUCTION -->
+      <section class="results-intro">
+        <p class="eyebrow">Performance &amp; experiences</p>
+
+        <h1>
+          Take your time.<br>
+          <em>Explore the record.</em>
+        </h1>
+
+        <p class="lead">
+          Review the connected-account reports and client experiences
+          below. Look at the full reporting period, including drawdowns
+          and trading history.
+        </p>
+
+        <p class="muted">
+          These are connected accounts using the KyneX approach—not
+          separate, independent strategies. Their outcomes can differ.
+          The full reports are the source for account-specific figures
+          and dates.
+        </p>
+      </section>
+
+      <!-- CONNECTED-ACCOUNT REPORTS -->
+      <section
+        class="section"
+        aria-label="Connected-account reports"
+      >
+        <div class="reports">
+
+          <!-- REPORT 1: KYNEX AI ENGINE -->
+          <article
+            class="widget-frame report"
+            aria-labelledby="report-heading-1"
+          >
+            <p class="eyebrow">Account report 01</p>
+
+            <h3 id="report-heading-1">
+              KyneX AI Engine
+            </h3>
+
+            <div class="widget-slot" id="report-widget-1">
+              <iframe
+                id="smt-equity-ai-engine"
+                data-smt-widget
+                title="KyneX AI Engine account equity chart on ShowMyTrades"
+                src="https://showmytrades.com/widget/kynex-ai-engine?type=equity&amp;theme=auto"
+                width="1000"
+                height="537"
+                loading="lazy"
+              ></iframe>
+            </div>
+
+            <div class="widget-bottom">
+              <span>Connected-account equity chart</span>
+
+              <a
+                class="textlink"
+                href="https://showmytrades.com/account/kynex-ai-engine"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Open full report ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- REPORT 2: KYNEX SCALPER 2 -->
+          <article
+            class="widget-frame report"
+            aria-labelledby="report-heading-2"
+          >
+            <p class="eyebrow">Account report 02</p>
+
+            <h3 id="report-heading-2">
+              KyneX Scalper — Account 2
+            </h3>
+
+            <div class="widget-slot" id="report-widget-2">
+              <iframe
+                id="smt-equity-scalper-2"
+                data-smt-widget
+                title="KyneX Scalper account 2 equity chart on ShowMyTrades"
+                src="https://showmytrades.com/widget/kynex-scalper-2?type=equity&amp;theme=auto"
+                width="1000"
+                height="537"
+                loading="lazy"
+              ></iframe>
+            </div>
+
+            <div class="widget-bottom">
+              <span>Connected-account equity chart</span>
+
+              <a
+                class="textlink"
+                href="https://showmytrades.com/account/kynex-scalper-2"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Open full report ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- REPORT 3: KYNEX SCALPER 3 -->
+          <article
+            class="widget-frame report"
+            aria-labelledby="report-heading-3"
+          >
+            <p class="eyebrow">Account report 03</p>
+
+            <h3 id="report-heading-3">
+              KyneX Scalper — Account 3
+            </h3>
+
+            <div class="widget-slot" id="report-widget-3">
+              <iframe
+                id="smt-equity-scalper-3"
+                data-smt-widget
+                title="KyneX Scalper account 3 equity chart on ShowMyTrades"
+                src="https://showmytrades.com/widget/kynex-scalper-3?type=equity&amp;theme=auto"
+                width="1000"
+                height="537"
+                loading="lazy"
+              ></iframe>
+            </div>
+
+            <div class="widget-bottom">
+              <span>Connected-account equity chart</span>
+
+              <a
+                class="textlink"
+                href="https://showmytrades.com/account/kynex-scalper-3"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Open full report ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- REPORT 4: KYNEX SCALPER -->
+          <article
+            class="widget-frame report"
+            aria-labelledby="report-heading-4"
+          >
+            <p class="eyebrow">Account report 04</p>
+
+            <h3 id="report-heading-4">
+              KyneX Scalper
+            </h3>
+
+            <div class="widget-slot" id="report-widget-4">
+              <iframe
+                id="smt-equity-scalper"
+                data-smt-widget
+                title="KyneX Scalper account equity chart on ShowMyTrades"
+                src="https://showmytrades.com/widget/kynex-scalper?type=equity&amp;theme=auto"
+                width="1000"
+                height="537"
+                loading="lazy"
+              ></iframe>
+            </div>
+
+            <div class="widget-bottom">
+              <span>Connected-account equity chart</span>
+
+              <a
+                class="textlink"
+                href="https://showmytrades.com/account/kynex-scalper"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Open full report ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- REPORT 5: KYNEX SCALPER 5 -->
+          <article
+            class="widget-frame report"
+            aria-labelledby="report-heading-5"
+          >
+            <p class="eyebrow">Account report 05</p>
+
+            <h3 id="report-heading-5">
+              KyneX Scalper — Account 5
+            </h3>
+
+            <div class="widget-slot" id="report-widget-5">
+              <iframe
+                id="smt-equity-scalper-5"
+                data-smt-widget
+                title="KyneX Scalper account 5 equity chart on ShowMyTrades"
+                src="https://showmytrades.com/widget/kynex-scalper-5?type=equity&amp;theme=auto"
+                width="1000"
+                height="537"
+                loading="lazy"
+              ></iframe>
+            </div>
+
+            <div class="widget-bottom">
+              <span>Connected-account equity chart</span>
+
+              <a
+                class="textlink"
+                href="https://showmytrades.com/account/kynex-scalper-5"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Open full report ↗
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="fine">
+          Historical account results. Connected-account outcomes can
+          differ. External reports open on ShowMyTrades. A report may
+          retain an earlier account title while its owner updates the naming.
+        </p>
+      </section>
+    </div>
+
+    <!-- CLIENT EXPERIENCES -->
+    <section class="section alt" id="client-experiences">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Client experiences</p>
+
+            <h2>Messages worth reading in context.</h2>
+          </div>
+
+          <p class="muted">
+            Individual experiences vary. Selected messages do not
+            establish typical results or guarantee future performance.
+          </p>
+        </div>
+
+        <div
+          class="gallery"
+          id="testimonial-gallery"
+        ></div>
+
+        <div class="empty-state" id="gallery-empty">
+          <p>
+            Approved client screenshots will be added here.
+          </p>
+
+          <p>
+            The public account reports above are available to explore now.
+          </p>
+        </div>
+
+        <div class="gallery-footer">
+          <button
+            class="btn outline"
+            id="load-more"
+            type="button"
+            hidden
+          >
+            Load more experiences
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- RISK INFORMATION -->
+  <section class="risk">
+    <div class="wrap">
+      <h2>Before you begin</h2>
+
+      <p>
+        Trading XAUUSD involves risk, including loss of capital.
+        Historical results and any results observed during the trial
+        do not guarantee future performance. Connected-account outcomes
+        can differ. A demo account is available for evaluating the
+        setup without risking live funds.
+      </p>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="closing">
+    <div class="wrap">
+      <p class="eyebrow">Your next step</p>
+
+      <h2>Take a closer look.</h2>
+
+      <p>
+        Review the records. Understand the approach.<br>
+        If it fits what you’re looking for, apply for the trial.
+      </p>
+
+      <a
+        class="btn"
+        data-contact="trial"
+        href="https://t.me/theegreatdavid"
+      >
+        Apply for Free Trial
+        <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap">
+      <span>
+        © <span data-year></span>
+        ProfitSplash Autotrades · KyneX Scalper
+      </span>
+
+      <span>
+        <a href="index.html">Overview</a>
+        &nbsp; / &nbsp;
+        <a href="results.html">Results &amp; experiences</a>
+      </span>
+    </div>
+  </footer>
+
+  <!-- FLOATING TRIAL BUTTON -->
+  <a
+    class="btn floating"
+    data-contact="trial"
+    href="https://t.me/theegreatdavid"
+  >
+    Apply for Free Trial
+    <span aria-hidden="true">↗</span>
+  </a>
+
+  <!-- TESTIMONIAL IMAGE VIEWER -->
+  <dialog
+    class="dialog"
+    id="image-dialog"
+    aria-labelledby="image-title"
+  >
+    <div class="dialog-head">
+      <p id="image-title">Client experience</p>
+
+      <button
+        class="iconbtn"
+        id="dialog-close"
+        type="button"
+        aria-label="Close enlarged screenshot"
+      >
+        Close ×
+      </button>
+    </div>
+
+    <img id="dialog-image" alt="">
+  </dialog>
+
+  <!--
+    SHOWMYTRADES AUTOMATIC HEIGHT ADJUSTMENT
+    One handler manages all five widgets.
+  -->
+  <script>
+    (function () {
+      var widgets = Array.from(
+        document.querySelectorAll('iframe[data-smt-widget]')
+      );
+
+      window.addEventListener('message', function (event) {
+        if (event.origin !== 'https://showmytrades.com') {
+          return;
+        }
+
+        var data = event.data;
+
+        if (
+          !data ||
+          typeof data !== 'object' ||
+          data.type !== 'widget-resize'
+        ) {
+          return;
+        }
+
+        var iframe = widgets.find(function (widget) {
+          return event.source === widget.contentWindow;
+        });
+
+        if (!iframe) {
+          return;
+        }
+
+        var height = Number(data.height);
+
+        if (!Number.isFinite(height) || height <= 0) {
+          return;
+        }
+
+        iframe.height = String(Math.ceil(height));
+      });
+    })();
+  </script>
+
+  <!-- SITE CONFIGURATION AND INTERACTIONS -->
+  <script src="assets/config.js"></script>
+  <script src="assets/main.js"></script>
+</body>
+</html>
