@@ -1,5 +1,5 @@
 window.KYNEX_CONFIG = {
-  telegramHandle: "theegreatdavid",
+  telegramHandle: "davlukee",
 
   carouselDelay: 8000,
 
