@@ -3,7 +3,6 @@ window.KYNEX_CONFIG = {
 
   carouselDelay: 8000,
 
-  // All 67 screenshots, using their existing filenames.
   testimonials: Array.from({ length: 67 }, function (_, index) {
     var photoNumber = index + 1;
 
